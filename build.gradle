@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin:'application'
+mainClassName = "email.kulakov.test.moneytransfer.MoneyTransferApplication"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.21.v20190926'
+    compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.21.v20190926'
+    compile group: 'org.jboss.resteasy', name: 'resteasy-guice', version: '4.3.1.Final'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
